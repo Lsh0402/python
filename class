@@ -1,0 +1,11 @@
+class Sample:
+    def __init__(self):
+        self.counter = 0
+    def numEven(self, n):   # self가 매개변수로 지정되어야 함
+        for k in range(n):
+            if k % 2 == 0:
+                self.counter += 1
+        return self.counter # self.counter 값이 리턴되어야 함
+
+s = Sample()
+print('# of cene intergers = ', s.numEven(15))
